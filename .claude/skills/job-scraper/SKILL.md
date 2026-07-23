@@ -24,8 +24,8 @@ The user triggers this skill by saying things like:
 - "/scrape"
 
 Optional arguments:
-- A focus area, e.g. "/scrape data science" or "/scrape geophysics"
-- "broad" to run all search categories, e.g. "/scrape broad"
+- A focus area, e.g. "/scrape data science" or "/scrape geophysics" - all categories still run, but results from the matching category are weighted/prioritized when presenting
+- "broad" to also include Borderline-tier locations (fully remote, outside-Germany-but-EU-hiring roles) and relax `--jobage` beyond 14 days, e.g. "/scrape broad"
 
 ---
 
@@ -39,16 +39,16 @@ Optional arguments:
 
 ### Step 1: Search
 
-Run queries from `search-queries.md`. By default, run the top 3 priority categories. If the user said "broad", run all categories. If the user specified a focus area (e.g. "data science"), prioritize queries from that category.
+Run **all four priority categories** from `search-queries.md` every time - there is no reduced default. If the user specified a focus area (e.g. "data science"), still run every category, but present/weight that category's results first. If the user said "broad", additionally include Borderline-tier locations and relax `--jobage`.
 
 **LinkedIn** - use the `linkedin-search` CLI, not `WebSearch`:
 ```bash
-bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "<keyword>" -l "Frankfurt, Hesse, Germany" --jobage 14 --format json
+bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "<keyword>" -l "<location>" --jobage 14 --format json
 ```
-- Run one command per CLI keyword listed under the active priority categories in `search-queries.md`.
-- Use the primary location first (Location Filter in `search-queries.md`); only expand to acceptable-tier cities if the primary location returns few results.
-- `--jobage 14` matches the Date Filter - omit only if a category is thin and older postings are worth surfacing (flag date explicitly if so).
-- Keep volume reasonable (per-query, not per-page-spam) - this hits LinkedIn's public endpoint directly, so don't loop it excessively in one run.
+- Run each CLI keyword listed in `search-queries.md` against **each** of Frankfurt, Berlin, and Munich (Hamburg/Cologne optional) in the same pass - see the Location Filter section in `search-queries.md`. Do not wait to see if Frankfurt alone is "thin" before trying other cities.
+- Keywords already have entry-level qualifiers built in (e.g. "Data Scientist Praktikum") - don't strip these back to bare role titles, that's what caused under-targeted results previously.
+- `--jobage 14` matches the Date Filter - omit only if a category is thin and older postings are worth surfacing (flag date explicitly if so), or if the user said "broad."
+- Keep volume reasonable (per-query, not per-page-spam) - this hits LinkedIn's public endpoint directly, so don't loop it excessively in one run. With ~4 categories x ~4 keywords x 3 locations, that's already ~48 calls - batch/parallelize where the tool allows it, and don't multiply further by adding extra locations beyond what's specified without good reason.
 
 **Company career pages** - use `WebSearch` with the `site:` queries in `search-queries.md`.
 
