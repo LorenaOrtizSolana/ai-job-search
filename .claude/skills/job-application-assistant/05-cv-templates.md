@@ -105,12 +105,14 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Data Scientist / ML Engineer roles:**
+> Data science student (Tecnológico de Monterrey, expected 2027) combining a strong foundation in statistics and machine learning with hands-on project experience in predictive modeling, classification, and clustering. Builds end-to-end pipelines in Python (Pandas, Scikit-Learn, TensorFlow/Keras) from raw data to actionable models, with a track record of applying rigorous analysis to real-world datasets spanning healthcare, air quality, and financial data.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Data Engineer roles:**
+> Data engineer with hands-on experience building automated data quality and migration testing at Deutsche Bundesbank (AnaCredit), using Pandas-based tests for referential integrity and aggregate consistency, plus automated error detection and ticketing workflows. Combines this with independent projects building auditable, end-to-end data pipelines (SQL/SQLite, cleaning, quality visualization) - comfortable owning a pipeline from ingestion through documentation.
+
+**For Cryptography / Security-focused Data roles:**
+> Data scientist with applied research experience in lattice-based cryptography (LWE, NTRU), including implementation and complexity analysis of cryptographic algorithms in Python, contributing to a scientific publication on security parameters and runtime behavior. Pairs this security research background with practical data engineering and ML skills for roles at the intersection of data and security.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.

@@ -1,70 +1,79 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Search Sites
 
-Primary (Danish job market):
-- **jobindex.dk** - largest Danish job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Denmark / your city)
-- **karriere.dk** - IDA's job board (engineering/science roles)
-- **jobfinder.dk** - another major Danish job board
-- **akademikernes.dk** - academic union job board
+Primary (Germany-focused, no Danish-specific portals - candidate is based in Frankfurt am Main, Germany):
+- **linkedin.com/jobs** - via the repo's dedicated `linkedin-search` CLI tool (`.agents/skills/linkedin-search/`), which hits LinkedIn's public jobs-guest API directly (no login, real current listings, recency-filterable). Do **not** use `WebSearch` with `site:linkedin.com/jobs` - it mostly surfaces generic aggregator/category pages and stale cached postings instead of individual listings.
+- Google site-searches (via `WebSearch`) against known target companies' career pages - still the right tool for this, since those pages aren't on LinkedIn
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+Secondary:
+- **xing.com** - popular in the DACH region, can be added later if useful
+- **stepstone.de**, **indeed.de** - broader German-market job boards, can be added later if useful
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. "Copenhagen", "Sjælland", "Hovedstaden") where the site supports it.
+Queries are grouped by priority. Each entry is a `linkedin-search` CLI keyword (`-q`) to run against the locations in **Location Filter** below, primary location first. Use `--jobage 14` to match the Date Filter. Company-career-page searches remain `WebSearch` queries.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Data Scientist / ML Engineer
 
-These match your strongest and most desired career direction.
+These match the strongest and most desired career direction.
 
+CLI keywords (`-q`):
 ```
-site:jobindex.dk "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:jobindex.dk "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+Data Scientist
+Machine Learning Engineer
+```
+Add `--remote onsite` / `--remote hybrid` as needed; omit for entry-level/working-student framing since LinkedIn doesn't have a dedicated seniority flag in this CLI - filter by title/description after fetching.
+
+### Priority 2: Data Engineer
+
+These match direct experience from the Deutsche Bundesbank/AnaCredit internship.
+
+CLI keywords (`-q`):
+```
+Data Engineer
+Data Quality
+data pipeline
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 3: Cryptography / Security-focused Data roles
 
-These match your domain expertise.
+Adjacent roles building on the lattice-based cryptography research background.
 
+CLI keywords (`-q`):
 ```
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
-
-```
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+cryptography
+security engineer data
+applied cryptography
 ```
 
 ### Priority 4: Broader Technical / Consulting
 
-Wider net for general technical roles.
+Wider net for general technical or entry-level roles suited to a student finishing a degree.
 
+CLI keywords (`-q`):
 ```
-site:jobindex.dk [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:jobindex.dk "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+data analyst Python
+working student data science
+graduate program data
 ```
+
+### Company career pages (WebSearch, not the CLI)
+
+For target companies without reliable LinkedIn presence, or to catch postings LinkedIn doesn't carry, still use `WebSearch` with `site:<company-careers-domain>` queries, e.g. `site:careers.deutsche-boerse.com Praktikum data`. Verify status by fetching the specific posting before presenting - see Important Rules in `SKILL.md` about expired/filled postings.
+
+## Target Sectors & Companies
+
+- **Banking / Financial services:** central banks (e.g. Deutsche Bundesbank, ECB), commercial banks (Deutsche Bank, Commerzbank, DZ Bank), fintech companies
+- **Tech:** companies hiring Data Scientists/ML Engineers broadly (open to a wide range of tech employers)
+- **Security / Cryptography-focused firms:** security consultancies, research labs, and companies with a cryptography/security angle
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+- **Ideal:** Frankfurt am Main and surrounding area
+- **Acceptable:** Other major German cities (Berlin, Munich, Hamburg, Cologne) if remote/hybrid flexibility is offered
+- **Borderline:** Fully remote roles based outside Germany but hiring EU-wide
+- **Too far:** Roles requiring relocation outside Germany/EU with no remote option
 
 ## Date Filter
 
@@ -73,4 +82,4 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape cryptography" -> Priority 3 queries + custom focus-specific queries

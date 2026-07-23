@@ -16,9 +16,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, Pandas, NumPy, SQL, Scikit-Learn, Keras, TensorFlow, statistics, data pipeline/ETL work, data quality automation
+**Moderate match areas:** R, Java, C++, cloud platforms (AWS, Azure Cognitive Services), Tableau/visualization, cryptography/security
+**Weak match areas:** Large-scale production ML infrastructure/MLOps, people management, enterprise software architecture beyond data pipelines
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +30,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Banking/financial-sector data engineering (data quality, migration testing, automated error detection) - direct from Deutsche Bundesbank/AnaCredit internship
+**Moderate:** Data science/ML roles (predictive modeling, classification, clustering) - strong project experience, limited paid industry tenure
+**Entry-level:** Cryptography/security research roles, senior/lead data roles, and roles requiring multiple years of industry experience
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -63,19 +63,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Build a full-time career in data science / ML engineering, or data engineering, applying quantitative methods to real business problems
+- Continue developing cryptography/security expertise where possible
+- Gain deeper industry experience in the banking/financial sector or tech, based near Frankfurt am Main
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Applying ML/statistics to real-world data problems, building rigorous/auditable data pipelines, complexity/security analysis
+- Tasks that drain: Not yet well characterized - limited industry tenure so far; flag for user confirmation on a per-role basis
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently completing BSc Data Science (expected 01/2027) while job hunting after internship conclusion; open to full-time roles, further internships, or working-student arrangements
+- **Flexibility**: Based in Frankfurt am Main; open to Frankfurt-area roles or remote/hybrid within Germany
+- **Professional development**: Prioritizes roles offering rigorous technical growth and structured scope over fast-paced generalist work
 
 ### 6. Salary Benchmark (Optional)
 

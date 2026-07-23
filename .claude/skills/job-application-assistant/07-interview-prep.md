@@ -10,30 +10,33 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. AnaCredit Migration Testing (Data quality automation)
+**S:** At Deutsche Bundesbank's AnaCredit unit, a data migration risked introducing silent discrepancies in business logic (row counts, referential integrity, aggregate values) between old and new systems.
+**T:** Build automated tests to catch any deviation before it reached reporting banks or downstream processes.
+**A:** Developed automated migration tests using Pandas DataFrames covering row-count checks, referential integrity, and aggregate consistency. Layered on automated error detection for duplicate IDs and value-range violations, wired to automatically create Jira tickets and notify reporting banks.
+**R:** Significantly reduced response time to data quality issues, catching problems automatically instead of relying on manual review.
+**Use for:** "Tell me about a time you improved a process", "Describe your experience with data quality/testing", "How do you approach automation?"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Lattice-Based Cryptography Research (Independent research & rigor)
+**S:** As part of a research project at Tecnológico de Monterrey under Prof. A. F. De Abiega L'Eglisse, the team needed to understand the practical security and performance trade-offs of lattice-based cryptographic schemes like LWE and NTRU.
+**T:** Implement the algorithms and analyze their complexity and security parameters across different lattice dimensions.
+**A:** Implemented LWE and NTRU in Python, ran complexity analysis, and studied runtime behavior as lattice dimensions changed, connecting the results to security parameter selection.
+**R:** Contributed analysis that fed into a scientific publication on the topic.
+**Use for:** "Tell me about independent/research work", "Describe a technically challenging project", "Why are you interested in security/cryptography?"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Healthcare Predictive Modeling (Applied ML on real-world data)
+**S:** Mexico's national health system had over 25 years of data that hadn't been systematically mined for patient risk patterns or resource planning.
+**T:** Build models to identify patient risk profiles and resource bottlenecks from this historical data.
+**A:** Built predictive models (Random Forest, Neural Networks) to forecast critical outcomes, used K-Means clustering to segment high-risk patient groups, and ran exploratory time-series and regional analyses to find seasonal patterns.
+**R:** Surfaced risk profiles and seasonal resource bottlenecks that could inform planning decisions.
+**Use for:** "Tell me about a machine learning project end-to-end", "How do you approach an open-ended data problem?"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Personal Banking Data Pipeline (Ownership & auditability)
+**S:** Wanted to demonstrate the ability to build a production-style, audit-ready data pipeline independent of any course or employer assignment.
+**T:** Design and build an end-to-end pipeline for simulated bank transaction data that could pass an audit.
+**A:** Simulated realistic transaction data for 150 accounts, loaded it into a normalized SQLite database with foreign-key integrity checks, and built staged data cleaning (duplicates, nulls, date formats, fuzzy-matched categorical errors) with a fully auditable log recording every change (table, column, old/new value, action, timestamp). Added SQL triggers for automatic balance maintenance and built 5 quality visualizations plus a structured exception report.
+**R:** Produced a fully self-contained, auditable pipeline showcased on GitHub, demonstrating initiative beyond coursework or internship requirements.
+**Use for:** "Tell me about a self-directed project", "How do you ensure data quality?", "Describe your experience with SQL/databases"
 
 ## Common Tough Questions
 

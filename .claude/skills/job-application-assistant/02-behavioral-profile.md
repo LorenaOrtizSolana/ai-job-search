@@ -1,50 +1,37 @@
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- Self-assessment collected via /setup interview questions (no formal PI/DISC/Myers-Briggs assessment on file) -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
-
-## Core Behavioral Drives
-
-| Drive | Level | Meaning |
-|-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+Ana Lorena's self-assessment identifies a **structured, analytical, deep-focus** working pattern. She thrives with clear scope and room for rigorous independent analysis, and does her best work with minimal context-switching - consistent with her research-driven cryptography work and audit-oriented data pipeline projects.
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Analytical rigor:** Comfortable with complexity analysis and quantitative depth (e.g. lattice-dimension security analysis, SVM/Random Forest model tuning)
+- **Ownership of end-to-end pipelines:** Builds auditable, fully-documented systems rather than quick throwaway scripts (e.g. banking data pipeline cleaning log)
+- **Independent problem-solving:** Able to take an ambiguous data-quality or research problem and turn it into a structured, automated solution
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Clear scope and well-defined technical problems
+- Extended, uninterrupted focus time for analysis or modeling work
+- Environments that value quantitative rigor and precision over fast, loosely-scoped iteration
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Limited full-time industry tenure to date:** Frame as rapid, deliberate skill-building - one internship (Deutsche Bundesbank/AnaCredit) plus multiple independent research and data projects completed alongside a rigorous degree program.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "independent contributor," "own a project end-to-end," "deep technical work," "research-oriented," "attention to detail," "data quality," "rigorous"
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- "fast-paced, constantly shifting priorities," "highly ambiguous, unscoped work," "heavy client-facing/sales-adjacent role" - not a hard no, but worth discussing fit explicitly since her strongest mode is structured deep-focus work
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Works well with managers who set clear scope and check in periodically rather than close daily oversight
+- Less well suited to constant re-prioritization without clear rationale
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Reference the auditable/rigorous pipeline work (Bundesbank internship, personal banking pipeline project) as evidence of structured, ownership-driven execution
+- **CV:** Emphasize complexity analysis, model rigor, and end-to-end pipeline ownership in bullet points
+- **Interviews:** Use the Bundesbank migration-testing STAR example and the lattice-cryptography research STAR example to demonstrate independent, rigorous work
+- **Don't overstate:** Avoid claiming extensive team-leadership or fast-paced startup experience - she has not yet worked in that mode professionally

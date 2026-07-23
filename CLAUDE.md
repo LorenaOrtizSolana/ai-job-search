@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Ana Lorena Ortiz Loyola
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Ana Lorena Ortiz Loyola, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,68 +10,67 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Ana Lorena Ortiz Loyola
+- **Location:** Frankfurt am Main, Germany (open to Frankfurt-area roles; remote/hybrid within Germany acceptable)
+- **Languages:** Spanish (native), English (C1, TOEFL iBT 105/120), German (C1)
+- **Status:** Actively job hunting. Bundesbank internship concluded 07/2026; BSc Data Science ongoing at Tecnológico de Monterrey, expected completion 01/2027
+- **LinkedIn headline:** "Data Science | Cryptography & Statistics | Machine Learning"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **BSc in Data Science** (05/2022-01/2027) - Tecnológico de Monterrey
+  - Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship)
+  - Topics: Data analysis & statistics, machine learning & AI, cryptography & security, NLP, numerical optimization, programming
+- **Exchange Semester** (10/2025-03/2026) - Universität Göttingen
+- **Abitur** (09/2019-05/2022) - Tecnológico de Monterrey
+  - Grade: 1.0. National Physics Olympiad 2020; Honorable Mention, Physics Olympiad 2021
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Data Engineer / Intern** (04/2026 - 07/2026) - **Deutsche Bundesbank (AnaCredit)** (Frankfurt am Main, Germany)
+  - Developed automated migration tests (row counts, referential integrity, aggregate consistency) using Pandas DataFrames to ensure identical business logic after data migration
+  - Implemented automated error detection identifying deviations (duplicate IDs, value-range violations) with automated Jira ticket creation and emails to reporting banks
+  - Significantly reduced response time to data quality issues
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, R, SQL, Pandas, NumPy, Scikit-Learn, Keras, TensorFlow
+- **Secondary:** Java, C++, Random Forest, SVM, K-Means, Tableau, Matplotlib, Seaborn
+- **Domain:** Cryptography & security (lattice-based schemes: LWE, NTRU), statistics, NLP, numerical optimization
+- **Software:** Azure Cognitive Services, AWS, Jira, Git, Excel, SQLite
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Data Science in Python** - University of Michigan (Coursera) - completed 04/2026
+- **Document Analysis with Azure Cognitive Services** - Coursera - completed 02/2026
+- **ML Crash Course: Classification & Logistic Regression** - Google Developer Program - completed 02/2026
+- **Automating Team Communication (Google Sheets & Apps Script)** - Coursera - completed 02/2026
+- **AWS Security Fundamentals / Cloud Fundamentals** - HSBC - completed 01/2025
+- **The Data Scientist's Toolbox / Python Data Structures / R Programming** - Johns Hopkins (Coursera) - completed 07/2020
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Contributed to a scientific publication on lattice-based cryptography (analysis of security parameters and runtime behavior of LWE/NTRU under varying lattice dimensions), arising from research with Prof. A. F. De Abiega L'Eglisse at Tecnológico de Monterrey. Full citation/DOI not yet available - update once published.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Academic Excellence Scholarship - Tecnológico de Monterrey
+- DAAD KOSPIE Scholarship
+- National Physics Olympiad - Mexico (2020)
+- Honorable Mention, Physics Olympiad (2021)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Structured, analytical, deep-focus** - thrives with clear scope and room for rigorous independent analysis; minimal context-switching
+- **Strengths:** Independent research and complexity analysis (cryptography), building auditable/rigorous data pipelines, translating ambiguous data quality problems into automated tests
+- **Growth areas:** Limited full-time industry experience to date (currently building this through internships and personal projects)
+- **Thrives in:** Roles with well-defined technical problems, quantitative rigor, and ownership over a pipeline or analysis end-to-end
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Applying ML/statistics to real-world data problems (predictive modeling, pipelines, data quality automation)
+- Cryptography and security research (lattice-based schemes)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Banking / Financial services: central banks, commercial banks, fintech (building on Deutsche Bundesbank/AnaCredit experience)
+- Tech: companies hiring Data Scientists/ML Engineers broadly
+- Security / Cryptography-focused firms and research labs
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- None strict - open-minded, evaluates roles case by case
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
