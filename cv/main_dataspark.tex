@@ -1,0 +1,189 @@
+%% CV - Ana Lorena Ortiz Loyola
+%% Tailored for: DataSpark GmbH - Werkstudent Kuenstliche Intelligenz / KI und Data Analytics
+%%
+%% Compile with: lualatex main_dataspark.tex
+%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{needspace}
+
+% Force both first and last name AND section headings to render in moderncv
+% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
+% looks inconsistent with the rest of the blue accent scheme.
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ana Lorena Ortiz Loyola - CV},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{Ana Lorena}{Ortiz Loyola}
+\address{Frankfurt am Main, Germany}{}{}
+\phone[mobile]{+49 176 62145797}
+\email{a01750283@tec.mx}
+\extrainfo{\href{https://linkedin.com/in/lorenasolana}{LinkedIn}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{Data science student (Tecnológico de Monterrey, expected 2027) combining a machine learning foundation (Scikit-Learn, Keras, TensorFlow) with hands-on experience building automated, production-style data and AI workflows at Deutsche Bundesbank. Uses Claude Code daily as an AI coding assistant to accelerate development while keeping full ownership of design decisions. Builds auditable, end-to-end pipelines from raw data through to documented, tested output.}
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Machine Learning}: Scikit-Learn, Keras, TensorFlow, Random Forest, SVM, K-Means, predictive modeling and clustering
+
+\item \textbf{AI-Assisted Development}: Daily use of Claude Code as an AI coding assistant to accelerate implementation of data pipelines and automation logic
+
+\item \textbf{Pipeline Automation}: Configuration-driven, parameterized Python/SQL solutions replacing manual, case-by-case processes at Deutsche Bundesbank
+
+\item \textbf{Data Engineering}: Automated data-quality testing (Pandas), documentation, and QA-style validation across the pipeline lifecycle
+
+\item \textbf{Programming}: Python, SQL, R, Java, C++; Git version control
+
+\item \textbf{Languages}: German (C1), English (C1, TOEFL iBT 105/120), Spanish (native)
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{04/2026--07/2026}{Data Engineer / Intern}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Germany}{}{\vspace{1pt}
+\begin{itemize}
+    \item Developed automated migration tests (row counts, referential integrity, aggregate consistency) using Pandas DataFrames to ensure identical business logic after data migration
+    \item Implemented automated error detection identifying deviations (duplicate IDs, value-range violations), with automated Jira ticketing and emails to reporting banks
+    \item Worked within an agile Scrum framework (sprint planning, daily stand-ups, sprint reviews)
+\end{itemize}
+\vspace{3pt}
+\textbf{Automated Validation Framework for Regulatory Reporting Data} -- converted a non-scalable, case-by-case validation script into a parameterized, reusable Python solution
+\begin{itemize}
+    \item Designed parameterized MySQL queries applicable to any database, attribute, and reporting period, replacing hard-coded per-case script logic
+    \item Built a YAML-driven configuration interface enabling batch validation across multiple databases, attributes, and reporting periods in a single call
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{05/2026}{Banking Data Pipeline -- Data Cleaning \& Audit Log}{Personal Project (GitHub, built with Claude Code)}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built an end-to-end pipeline for simulated bank transactions (150 accounts) with a normalized SQLite database and foreign-key integrity checks
+    \item Staged data cleaning with a fully auditable log; automated balance maintenance via SQL triggers; 5 quality visualizations and a structured exception report
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--12/2024}{Predictive Modeling -- Healthcare Optimization}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built predictive models (Random Forest, Neural Networks) and K-Means clustering to identify patient risk profiles from 25+ years of Mexican national health data
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{04/2023--06/2023}{Mexico City Air Quality Analysis -- SVM Classification}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Applied SVM models (linear \& RBF) to classify critical ozone levels from city-wide NOx/O3 data with high accuracy
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexico}{}{\vspace{1pt}
+Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship). Topics: data analysis \& statistics, machine learning \& AI, cryptography \& security, numerical optimization.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025--2026}{Exchange Semester}{Universität Göttingen}{Germany}{}{}}
+
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item German (C1), English (C1, TOEFL iBT 105/120), Spanish (native).
+\end{itemize}
+
+% ============================================================
+%     PUBLICATIONS
+% ============================================================
+
+\section{Publications}
+\vspace{1pt}
+\begin{itemize}
+\item Contributed to a scientific publication on lattice-based cryptography (LWE, NTRU security parameter and runtime analysis), with Prof. A. F. De Abiega L'Eglisse, Tecnológico de Monterrey (citation pending publication).
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Academic Excellence Scholarship} -- Tecnológico de Monterrey.}
+\item{\textbf{DAAD KOSPIE Scholarship}.}
+\item{\textbf{National Physics Olympiad} -- Mexico (2020).}
+\item{\textbf{Honorable Mention, Physics Olympiad} (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}
