@@ -1,13 +1,14 @@
-%% Example CV - Ana Lorena Ortiz Loyola
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% CV - Ana Lorena Ortiz Loyola
+%% Tailored for: Deutsche Bundesbank - Praktikum im Bereich bankenaufsichtliche Daten und Analysen zum Meldewesen
 %%
-%% Compile with: lualatex main_example.tex
+%% Compile with: lualatex main_bundesbank_meldewesen.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
+
+\usepackage{needspace}
 
 % Force both first and last name AND section headings to render in moderncv
 % blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
@@ -28,7 +29,6 @@
 }
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
-\usepackage{needspace}
 
 % personal data
 \name{Ana Lorena}{Ortiz Loyola}
@@ -46,7 +46,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{Data science student (Tecnológico de Monterrey, expected 2027) with hands-on experience in data engineering, machine learning, and cryptography research. Built automated data quality and migration testing at Deutsche Bundesbank (AnaCredit), and independent projects spanning predictive modeling, classification, and lattice-based cryptography. Comfortable owning a data pipeline end-to-end, from ingestion through auditable documentation.}
+\small{Data science student (Tecnológico de Monterrey, expected 2027) with direct, hands-on experience in banking-supervisory data and regulatory reporting at Deutsche Bundesbank (AnaCredit), where I built a parameterized validation framework and statistical benchmarking logic for supervisory reporting data in Python, SQL, and R. Comfortable working with Meldewesen datasets end-to-end: validation logic, anomaly detection, and auditable documentation for reporting institutions.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +56,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{Programming}: Python (Pandas, NumPy, Scikit-Learn, Keras, TensorFlow), R, Java, C++
+\item \textbf{Programming}: Python, R, SQL, Java, C++
 
-\item \textbf{Data \& Databases}: SQL, SQLite, data cleaning and pipeline design, Excel
+\item \textbf{Regulatory Reporting Data}: Parameterized validation frameworks for supervisory (Meldewesen) reporting data; percentile-based statistical benchmarking to flag anomalous reporting frequencies
 
-\item \textbf{Machine Learning}: Random Forest, SVM, K-Means, predictive modeling, classification, clustering
+\item \textbf{Data Quality \& Automation}: Automated migration and error-detection testing (Pandas), YAML-driven batch validation, automated ticketing and stakeholder communication
 
-\item \textbf{Cryptography \& Security}: Lattice-based schemes (LWE, NTRU), complexity and security parameter analysis
+\item \textbf{Databases \& Tools}: SQL, SQLite, MySQL, Excel, Git, Jira
 
-\item \textbf{Cloud \& Tools}: Azure Cognitive Services, AWS, Jira, Git, Tableau, Matplotlib, Seaborn
+\item \textbf{Machine Learning}: Scikit-Learn, Random Forest, SVM, K-Means, predictive modeling
+
+\item \textbf{Analysis \& Communication}: Structured reporting for regulatory stakeholders, German (C1) and English (C1)
 
 \end{itemize}
 
@@ -76,30 +78,25 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
+\needspace{5\baselineskip}
 \item{\cventry{04/2026--07/2026}{Data Engineer / Intern}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Germany}{}{\vspace{1pt}
 \begin{itemize}
     \item Developed automated migration tests (row counts, referential integrity, aggregate consistency) using Pandas DataFrames to ensure identical business logic after data migration
-    \item Implemented automated error detection identifying deviations (duplicate IDs, value-range violations)
-    \item Automated Jira ticket creation and emails to reporting banks for detected data quality issues
-    \item Significantly reduced response time to data quality problems
+    \item Implemented automated error detection identifying deviations (duplicate IDs, value-range violations), with automated Jira ticketing and emails to reporting banks
     \item Worked within an agile Scrum framework (sprint planning, daily stand-ups, sprint reviews)
 \end{itemize}
 \vspace{3pt}
 \textbf{Automated Validation Framework for Regulatory Reporting Data} -- converted a non-scalable, case-by-case validation script into a parameterized, reusable Python solution
 \begin{itemize}
     \item Designed parameterized MySQL queries applicable to any database, attribute, and reporting period, replacing hard-coded per-case script logic
-    \item Shifted computationally intensive operations to the database layer (SQL views, aggregated queries) to efficiently process large regulatory databases
-    \item Built a YAML-driven configuration interface enabling batch validation across multiple databases, attributes, and reporting periods in a single call
     \item Extended the validation logic with percentile-based statistical benchmarking over a rolling 12-month window to flag anomalous reporting frequencies and separate false positives from genuine data-quality issues
-    \item Added comprehensive exception handling for connection failures, invalid input, and edge cases such as composite primary keys
+    \item Built a YAML-driven configuration interface enabling batch validation across multiple databases, attributes, and reporting periods in a single call
 \end{itemize}
 \vspace{3pt}
-\textbf{Test Data Generator for the Bundesbank Platform} -- built a configuration-driven system producing complete, consistent synthetic test datasets
+\textbf{Test Data Generator for the Bundesbank Platform} -- configuration-driven system producing complete, consistent synthetic test datasets
 \begin{itemize}
-    \item Generated Cartesian-product attribute combinations per table from a custom template, independent of data type (strings, booleans, numbers, dates)
-    \item Maintained consistent IDs across tables to preserve referential integrity in generated data
-    \item Exported datasets as XML with full schema metadata, referential-integrity information, and plausibility metrics (e.g. expected record counts)
+    \item Generated Cartesian-product attribute combinations per table with consistent IDs across tables to preserve referential integrity
+    \item Exported datasets as XML with full schema metadata and plausibility metrics
 \end{itemize}}}
 
 \end{itemize}
@@ -108,39 +105,29 @@
 %     PROJECTS
 % ============================================================
 
+\needspace{8\baselineskip}
 \section{Projects}
 \vspace{1pt}
 \begin{itemize}
 
-\needspace{5\baselineskip}
+\item{\cventry{05/2026}{Banking Data Pipeline -- Data Cleaning \& Audit Log}{Personal Project (GitHub)}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built an end-to-end pipeline for simulated bank transactions (150 accounts) with a normalized SQLite database and foreign-key integrity checks
+    \item Staged data cleaning with a fully auditable log documenting every change (table, column, old/new value, timestamp)
+\end{itemize}}}
+
+\vspace{3pt}
+
 \item{\cventry{10/2024--02/2025}{Lattice-Based Cryptography Research}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
 \begin{itemize}
-    \item Implemented and analyzed the complexity of lattice-based cryptographic algorithms (LWE, NTRU) in Python
-    \item Contributed to a scientific publication analyzing security parameters and runtime behavior across lattice dimensions
+    \item Implemented and analyzed the complexity of lattice-based cryptographic algorithms (LWE, NTRU) in Python; contributed to a scientific publication
 \end{itemize}}}
 
 \vspace{3pt}
 
 \item{\cventry{10/2024--12/2024}{Predictive Modeling -- Healthcare Optimization}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
 \begin{itemize}
-    \item Analyzed 25+ years of Mexican national health data to identify patient risk profiles and resource bottlenecks
-    \item Built predictive models (Random Forest, Neural Networks) and K-Means clustering for high-risk segmentation
-\end{itemize}}}
-
-\vspace{3pt}
-
-\item{\cventry{05/2026}{Banking Data Pipeline -- Data Cleaning \& Audit Log}{Personal Project (GitHub)}{}{}{\vspace{1pt}
-\begin{itemize}
-    \item Built an end-to-end pipeline for simulated bank transactions (150 accounts) with a normalized SQLite database and foreign-key integrity checks
-    \item Staged data cleaning with a fully auditable log; automated balance maintenance via SQL triggers
-\end{itemize}}}
-
-\vspace{3pt}
-
-\item{\cventry{04/2023--06/2023}{Mexico City Air Quality Analysis -- SVM Classification}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
-\begin{itemize}
-    \item Analyzed city-wide NOx/O3 data and applied SVM models (linear \& RBF) to classify critical ozone levels with high accuracy
-    \item Correlation analysis and visualizations identified elevated pollution in southern city districts; findings presented in a final presentation
+    \item Analyzed 25+ years of Mexican national health data to identify patient risk profiles and resource bottlenecks; built predictive models (Random Forest, Neural Networks) and K-Means clustering for high-risk segmentation
 \end{itemize}}}
 
 \end{itemize}
@@ -154,19 +141,12 @@
 \begin{itemize}
 
 \item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexico}{}{\vspace{1pt}
-Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship). Topics: data analysis \& statistics, machine learning \& AI, cryptography \& security, NLP, numerical optimization.
+Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship). Topics: data analysis \& statistics, machine learning \& AI, cryptography \& security, numerical optimization.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{2025--2026}{Exchange Semester}{Universität Göttingen}{Germany}{}{\vspace{1pt}
-}}
-
-\vspace{3pt}
-
-\item{\cventry{2019--2022}{Abitur}{Tecnológico de Monterrey}{Mexico}{}{\vspace{1pt}
-Grade: 1.0. National Physics Olympiad 2020; Honorable Mention, Physics Olympiad 2021.
-}}
+\item{\cventry{2025--2026}{Exchange Semester}{Universität Göttingen}{Germany}{}{}}
 
 \end{itemize}
 
@@ -177,11 +157,11 @@ Grade: 1.0. National Physics Olympiad 2020; Honorable Mention, Physics Olympiad 
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item Spanish (native), English (C1, TOEFL iBT 105/120), German (C1).
+\item German (C1), English (C1, TOEFL iBT 105/120), Spanish (native).
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     PUBLICATIONS
 % ============================================================
 
 \section{Publications}
@@ -191,7 +171,7 @@ Grade: 1.0. National Physics Olympiad 2020; Honorable Mention, Physics Olympiad 
 \end{itemize}
 
 % ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}

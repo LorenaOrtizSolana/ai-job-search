@@ -1,0 +1,191 @@
+%% CV - Ana Lorena Ortiz Loyola
+%% Tailored for: DekaBank - Trainee (w/m/d) im Kapitalmarktgeschaeft mit Schwerpunkt Kuenstliche Intelligenz, Frankfurt am Main
+%% NOTE: Role requires a completed Bachelor's/Master's degree; candidate's BSc completes 01/2027,
+%% start date for this trainee program is 10/2026. Eligibility gap acknowledged in cover letter.
+%%
+%% Compile with: lualatex main_deka_trainee.tex
+%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{needspace}
+
+% Force both first and last name AND section headings to render in moderncv
+% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
+% looks inconsistent with the rest of the blue accent scheme.
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ana Lorena Ortiz Loyola - CV},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{Ana Lorena}{Ortiz Loyola}
+\address{Frankfurt am Main, Germany}{}{}
+\phone[mobile]{+49 176 62145797}
+\email{a01750283@tec.mx}
+\extrainfo{\href{https://linkedin.com/in/lorenasolana}{LinkedIn}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{Data science student (Tecnológico de Monterrey, expected 2027) with hands-on machine learning experience (Scikit-Learn, Keras, TensorFlow) and object-oriented programming in Python and Java, combined with practical financial-services experience through a data engineering internship at Deutsche Bundesbank (AnaCredit). Strong analytical foundation from independent research in cryptography and predictive modeling, with a growing interest in applying AI to capital-markets business.}
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Machine Learning \& AI}: Scikit-Learn, Keras, TensorFlow, Random Forest, SVM, K-Means, predictive modeling
+
+\item \textbf{Object-Oriented Programming}: Python, Java, C++
+
+\item \textbf{Financial Services Experience}: Data quality verification, migration testing, regulatory reporting (Deutsche Bundesbank AnaCredit)
+
+\item \textbf{Analytical Rigor}: Statistics, numerical optimization, cryptographic complexity analysis
+
+\item \textbf{Data \& Databases}: SQL, SQLite, Pandas, NumPy
+
+\item \textbf{Languages}: German (C1), English (C1)
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{04/2026--07/2026}{Data Engineer / Intern}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Germany}{}{\vspace{1pt}
+\begin{itemize}
+    \item Developed automated migration tests (row counts, referential integrity, aggregate consistency) using Pandas DataFrames to ensure identical business logic after data migration
+    \item Implemented automated error detection identifying deviations (duplicate IDs, value-range violations) in reported banking data
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{10/2024--02/2025}{Lattice-Based Cryptography Research}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Implemented and analyzed the complexity of lattice-based cryptographic algorithms (LWE, NTRU) in Python; contributed to a scientific publication
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--12/2024}{Predictive Modeling -- Healthcare Optimization}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Analyzed 25+ years of national health data; built and validated predictive models (Random Forest, Neural Networks) and K-Means clustering
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{05/2026}{Banking Data Pipeline -- Data Cleaning \& Audit Log}{Personal Project (GitHub), built with Claude Code}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built an end-to-end pipeline for simulated bank transactions (150 accounts) with a fully auditable data-cleaning log
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{04/2023--06/2023}{Air Quality Analysis Mexico City -- SVM Classification}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built SVM models (linear and RBF kernels) to classify critical ozone levels from citywide NOx/O3 data
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexico}{}{\vspace{1pt}
+Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship). Topics: machine learning \& AI, data analysis \& statistics, numerical optimization.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025--2026}{Exchange Semester}{Universität Göttingen}{Germany}{}{}}
+
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item German (C1), English (C1, TOEFL iBT 105/120), Spanish (native).
+\end{itemize}
+
+% ============================================================
+%     PUBLICATIONS
+% ============================================================
+
+\section{Publications}
+\vspace{1pt}
+\begin{itemize}
+\item Contributed to a scientific publication on lattice-based cryptography (LWE, NTRU security parameter and runtime analysis), with Prof. A. F. De Abiega L'Eglisse, Tecnológico de Monterrey (citation pending publication).
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Academic Excellence Scholarship} -- Tecnológico de Monterrey.}
+\item{\textbf{DAAD KOSPIE Scholarship}.}
+\item{\textbf{National Physics Olympiad} -- Mexico (2020).}
+\item{\textbf{Honorable Mention, Physics Olympiad} (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}

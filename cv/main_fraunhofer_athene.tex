@@ -1,0 +1,183 @@
+%% CV - Ana Lorena Ortiz Loyola
+%% Tailored for: Fraunhofer SIT (ATHENE) - Studentische Hilfskraft zur Unterstuetzung der ATHENE Geschaeftsstelle, Darmstadt
+%% NOTE: This is an office/administrative support role; weaker technical match than other roles
+%% in this batch, but a genuine, honest fit on Excel proficiency, German C1, and structured working style.
+%%
+%% Compile with: lualatex main_fraunhofer_athene.tex
+%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{needspace}
+
+% Force both first and last name AND section headings to render in moderncv
+% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
+% looks inconsistent with the rest of the blue accent scheme.
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ana Lorena Ortiz Loyola - CV},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{Ana Lorena}{Ortiz Loyola}
+\address{Frankfurt am Main, Germany}{}{}
+\phone[mobile]{+49 176 62145797}
+\email{a01750283@tec.mx}
+\extrainfo{\href{https://linkedin.com/in/lorenasolana}{LinkedIn}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{Data science student (Tecnológico de Monterrey, expected 2027) with a structured, detail-oriented working style demonstrated across research and data-quality projects, strong MS Office and Excel skills, and practical experience coordinating documentation and stakeholder communication during a data engineering internship at Deutsche Bundesbank (AnaCredit). Reliable, organized, and comfortable working independently on administrative and coordination tasks.}
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Office \& Organization}: Excel, Word, PowerPoint, structured documentation and reporting
+
+\item \textbf{Stakeholder Communication}: Coordinated automated reporting and direct communication with external parties (Deutsche Bundesbank AnaCredit)
+
+\item \textbf{Detail-Oriented Working Style}: Auditable, fully-documented work across all technical and research projects
+
+\item \textbf{Data \& Programming}: Python, SQL, statistical analysis (supporting skill set beyond core administrative tasks)
+
+\item \textbf{Languages}: German (C1), English (C1)
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{04/2026--07/2026}{Data Engineer / Intern}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Germany}{}{\vspace{1pt}
+\begin{itemize}
+    \item Developed automated migration tests and documentation to ensure identical business logic after data migration
+    \item Coordinated automated reporting and direct communication with reporting banks on detected data quality issues
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{05/2026}{Banking Data Pipeline -- Data Cleaning \& Audit Log}{Personal Project (GitHub), built with Claude Code}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built a fully auditable data-cleaning log recording every change (table, column, old/new value, action, timestamp) for simulated bank transactions
+    \item Produced quality visualizations and a structured exception report
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--12/2024}{Predictive Modeling -- Healthcare Optimization}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Analyzed 25+ years of national health data and documented findings in structured visualizations
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--02/2025}{Lattice-Based Cryptography Research}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Implemented and analyzed lattice-based cryptographic algorithms (LWE, NTRU) in Python; contributed to a scientific publication
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexico}{}{\vspace{1pt}
+Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship). Topics: data analysis \& statistics, cryptography \& security.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025--2026}{Exchange Semester}{Universität Göttingen}{Germany}{}{}}
+
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item German (C1), English (C1, TOEFL iBT 105/120), Spanish (native).
+\end{itemize}
+
+% ============================================================
+%     PUBLICATIONS
+% ============================================================
+
+\section{Publications}
+\vspace{1pt}
+\begin{itemize}
+\item Contributed to a scientific publication on lattice-based cryptography (LWE, NTRU security parameter and runtime analysis), with Prof. A. F. De Abiega L'Eglisse, Tecnológico de Monterrey (citation pending publication).
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Academic Excellence Scholarship} -- Tecnológico de Monterrey.}
+\item{\textbf{DAAD KOSPIE Scholarship}.}
+\item{\textbf{National Physics Olympiad} -- Mexico (2020).}
+\item{\textbf{Honorable Mention, Physics Olympiad} (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}

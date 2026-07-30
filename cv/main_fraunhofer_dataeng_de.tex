@@ -1,0 +1,191 @@
+%% Lebenslauf - Ana Lorena Ortiz Loyola
+%% Zugeschnitten auf: Fraunhofer SIT (ATHENE) - Studentische Hilfskraft im Bereich Data Engineering & Data Science, Darmstadt
+%% Deutsche Version von main_fraunhofer_dataeng.tex.
+%%
+%% Kompilieren mit: lualatex main_fraunhofer_dataeng_de.tex
+%% (pdflatex schlägt auf modernem MiKTeX häufig mit fontawesome5-Fehlern fehl.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{needspace}
+
+% Erzwingt, dass Vor- und Nachname sowie die Sektionsüberschriften in moderncv
+% Blau (color1) dargestellt werden. Der banking-Standardstil rendert diese auf
+% lualatex+MiKTeX sonst schwarz, was inkonsistent mit dem restlichen blauen
+% Akzentschema wirkt.
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ana Lorena Ortiz Loyola - Lebenslauf},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% Persönliche Daten
+\name{Ana Lorena}{Ortiz Loyola}
+\address{Frankfurt am Main, Deutschland}{}{}
+\phone[mobile]{+49 176 62145797}
+\email{a01750283@tec.mx}
+\extrainfo{\href{https://linkedin.com/in/lorenasolana}{LinkedIn}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILTEXT
+% ============================================================
+
+\vspace{6pt}
+\small{Data-Science-Studentin (Tecnológico de Monterrey, Abschluss voraussichtlich 2027) mit praktischer Python- (Pandas, NumPy) und SQL-Erfahrung aus einem Data-Engineering-Praktikum bei der Deutschen Bundesbank (AnaCredit), sowie eigenständiger Forschung im Bereich Kryptografie und Sicherheit (LWE, NTRU gitterbasierte Verfahren). Zuverlässig, sorgfältig und geübt im eigenständigen Arbeiten, mit echtem Interesse an angewandter Cybersicherheitsforschung.}
+
+% ============================================================
+%     KERNKOMPETENZEN
+% ============================================================
+
+\section{Kernkompetenzen}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Data Engineering}: Python (Pandas, NumPy), SQL, SQLite, Datenbereinigung und Pipeline-Design
+
+\item \textbf{Cybersicherheit \& Kryptografie}: Gitterbasierte Verfahren (LWE, NTRU), Sicherheitsparameter- und Laufzeitanalyse, Beitrag zu einer wissenschaftlichen Publikation
+
+\item \textbf{Finanzdienstleistungserfahrung}: Datenqualitätsprüfung und Migrationstests bei der Deutschen Bundesbank (AnaCredit)
+
+\item \textbf{Programmierung}: Python, R, SQL, Java, C++
+
+\item \textbf{Machine Learning}: Scikit-Learn, Keras, TensorFlow, Random Forest, SVM, K-Means
+
+\item \textbf{Sprachen \& Tools}: Deutsch (C1), Englisch (C1), Git
+
+\end{itemize}
+
+% ============================================================
+%     BERUFSERFAHRUNG
+% ============================================================
+
+\section{Berufserfahrung}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{04/2026--07/2026}{Data Engineer / Praktikantin}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Deutschland}{}{\vspace{1pt}
+\begin{itemize}
+    \item Entwickelte automatisierte Migrationstests (Zeilenanzahl, referenzielle Integrität, Aggregatkonsistenz) mit Pandas-DataFrames, um identische Geschäftslogik nach der Datenmigration sicherzustellen
+    \item Implementierte automatisierte Fehlererkennung zur Identifikation von Abweichungen (doppelte IDs, Wertebereichsverletzungen) in gemeldeten Bankdaten
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJEKTE
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Projekte}
+\vspace{1pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{10/2024--02/2025}{Forschung zu gitterbasierter Kryptografie}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Implementierte und analysierte die Komplexität gitterbasierter kryptografischer Algorithmen (LWE, NTRU) in Python; Beitrag zu einer wissenschaftlichen Publikation über Sicherheitsparameter und Laufzeitverhalten
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{05/2026}{Banking-Datenpipeline -- Datenbereinigung \& Prüfprotokoll}{Persönliches Projekt (GitHub), umgesetzt mit Claude Code}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Entwickelte eine End-to-End-Pipeline für simulierte Banktransaktionen (150 Konten): normalisierte SQLite-Datenbank mit Fremdschlüssel-Integritätsprüfungen und vollständig nachvollziehbarem Bereinigungsprotokoll
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--12/2024}{Predictive Modeling -- Optimierung im Gesundheitswesen}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Analysierte über 25 Jahre nationaler Gesundheitsdaten; entwickelte und validierte Predictive-Modelle (Random Forest, neuronale Netze) und K-Means-Clustering
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{04/2023--06/2023}{Luftqualitätsanalyse Mexiko-Stadt -- SVM-Klassifikation}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Entwickelte SVM-Modelle (linearer und RBF-Kernel) zur Klassifikation kritischer Ozonwerte anhand stadtweiter NOx/O3-Daten
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     AUSBILDUNG
+% ============================================================
+
+\section{Ausbildung}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexiko}{}{\vspace{1pt}
+Note: 1,3 (Stipendium für akademische Exzellenz; DAAD-KOSPIE-Stipendium). Schwerpunkte: Datenanalyse \& Statistik, Kryptografie \& Sicherheit, Machine Learning \& KI, numerische Optimierung.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025--2026}{Auslandssemester}{Universität Göttingen}{Deutschland}{}{}}
+
+\end{itemize}
+
+% ============================================================
+%     SPRACHEN
+% ============================================================
+
+\section{Sprachen}
+\vspace{1pt}
+\begin{itemize}
+\item Deutsch (C1), Englisch (C1, TOEFL iBT 105/120), Spanisch (Muttersprache).
+\end{itemize}
+
+% ============================================================
+%     PUBLIKATIONEN
+% ============================================================
+
+\section{Publikationen}
+\vspace{1pt}
+\begin{itemize}
+\item Beitrag zu einer wissenschaftlichen Publikation über gitterbasierte Kryptografie (Sicherheitsparameter- und Laufzeitanalyse von LWE und NTRU), gemeinsam mit Prof. A. F. De Abiega L'Eglisse, Tecnológico de Monterrey (Zitation ausstehend, Publikation in Vorbereitung).
+\end{itemize}
+
+% ============================================================
+%     AUSZEICHNUNGEN
+% ============================================================
+
+\section{Auszeichnungen}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Stipendium für akademische Exzellenz} -- Tecnológico de Monterrey.}
+\item{\textbf{DAAD-KOSPIE-Stipendium}.}
+\item{\textbf{Nationale Physik-Olympiade} -- Mexiko (2020).}
+\item{\textbf{Lobende Erwähnung, Physik-Olympiade} (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENZEN
+% ============================================================
+
+\section{Referenzen}
+\vspace{1pt}
+\begin{itemize}
+\item{Auf Anfrage erhältlich.}
+\end{itemize}
+
+\end{document}

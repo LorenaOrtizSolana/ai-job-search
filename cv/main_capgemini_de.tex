@@ -1,0 +1,193 @@
+%% Lebenslauf - Ana Lorena Ortiz Loyola
+%% Zugeschnitten auf: Capgemini Invent - Praktikant/Werkstudent in der Strategie- und Managementberatung (m/w/d), Frankfurt am Main
+%% Deutsche Version von main_capgemini.tex.
+%%
+%% Kompilieren mit: lualatex main_capgemini_de.tex
+%% (pdflatex schlägt auf modernem MiKTeX häufig mit fontawesome5-Fehlern fehl.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{needspace}
+
+% Erzwingt, dass Vor- und Nachname sowie die Sektionsüberschriften in moderncv
+% Blau (color1) dargestellt werden. Der banking-Standardstil rendert diese auf
+% lualatex+MiKTeX sonst schwarz, was inkonsistent mit dem restlichen blauen
+% Akzentschema wirkt.
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ana Lorena Ortiz Loyola - Lebenslauf},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% Persönliche Daten
+\name{Ana Lorena}{Ortiz Loyola}
+\address{Frankfurt am Main, Deutschland}{}{}
+\phone[mobile]{+49 176 62145797}
+\email{a01750283@tec.mx}
+\extrainfo{\href{https://linkedin.com/in/lorenasolana}{LinkedIn}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILTEXT
+% ============================================================
+
+\vspace{6pt}
+\small{Data-Science-Studentin (Tecnológico de Monterrey, Abschluss voraussichtlich 2027), die starke Datenanalytik-Fähigkeiten mit praktischer Erfahrung darin verbindet, unklare technische Probleme in strukturierte, dokumentierte Lösungen zu übersetzen, zuletzt bei der Deutschen Bundesbank (AnaCredit) inklusive Stakeholder-Kommunikation mit meldenden Banken. Praktische Erfahrung mit KI-gestützten Entwicklungstools (Claude Code) prägt das Interesse an Themen der digitalen Transformation, gepaart mit einer strukturierten, detailgenauen Arbeitsweise, die sich gut für die Managementberatung eignet.}
+
+% ============================================================
+%     KERNKOMPETENZEN
+% ============================================================
+
+\section{Kernkompetenzen}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Datenanalytik}: Python (Pandas, NumPy, Scikit-Learn), SQL, statistische Analyse, Datenvisualisierung (Matplotlib, Seaborn, Tableau)
+
+\item \textbf{Strukturierte Problemlösung}: Übersetzung unklarer Datenqualitätsprobleme in automatisierte, dokumentierte Lösungen (Deutsche Bundesbank AnaCredit)
+
+\item \textbf{Stakeholder-Kommunikation}: Automatisiertes Reporting und direkte Kommunikation mit meldenden Banken zu Datenqualitätsproblemen
+
+\item \textbf{Digitale Transformation \& KI-Tools}: Praktische Erfahrung mit einem KI-gestützten Programmierassistenten (Claude Code) zur Beschleunigung eines realen End-to-End-Projekts
+
+\item \textbf{Programmierung}: Python, R, SQL, Java, C++
+
+\item \textbf{MS Office \& Tools}: Excel, Word, PowerPoint, Azure Cognitive Services, AWS, Git
+
+\end{itemize}
+
+% ============================================================
+%     BERUFSERFAHRUNG
+% ============================================================
+
+\section{Berufserfahrung}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{04/2026--07/2026}{Data Engineer / Praktikantin}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Deutschland}{}{\vspace{1pt}
+\begin{itemize}
+    \item Entwickelte automatisierte Migrationstests (Zeilenanzahl, referenzielle Integrität, Aggregatkonsistenz) mit Pandas-DataFrames, um identische Geschäftslogik nach der Datenmigration sicherzustellen
+    \item Implementierte automatisierte Fehlererkennung zur Identifikation von Abweichungen (doppelte IDs, Wertebereichsverletzungen), inklusive automatisierter Jira-Ticketerstellung und direkter E-Mail-Kommunikation mit meldenden Banken
+    \item Reduzierte die Reaktionszeit bei Datenqualitätsproblemen deutlich
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJEKTE
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Projekte}
+\vspace{1pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{05/2026}{Banking-Datenpipeline -- Datenbereinigung \& Prüfprotokoll}{Persönliches Projekt (GitHub), umgesetzt mit Claude Code}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Konzipierte und entwickelte eine End-to-End-Datenpipeline für simulierte Banktransaktionen (150 Konten) unter Einsatz von Claude Code als KI-gestütztem Programmierassistenten zur Beschleunigung der Umsetzung
+    \item Erstellte Qualitätsvisualisierungen und einen strukturierten Ausnahmebericht für die Stakeholder-Überprüfung
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--12/2024}{Predictive Modeling -- Optimierung im Gesundheitswesen}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Analysierte über 25 Jahre nationaler Gesundheitsdaten zur Identifikation von Patientenrisikoprofilen und Ressourcenengpässen; entwickelte Predictive-Modelle und kommunizierte Ergebnisse mittels strukturierter Visualisierungen
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{04/2023--06/2023}{Luftqualitätsanalyse Mexiko-Stadt -- SVM-Klassifikation}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Entwickelte SVM-Modelle zur Klassifikation kritischer Ozonwerte anhand stadtweiter Daten; visualisierte und kommunizierte Ergebnisse zu regionalen Belastungsmustern
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--02/2025}{Forschung zu gitterbasierter Kryptografie}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Implementierte und analysierte die Komplexität gitterbasierter kryptografischer Algorithmen (LWE, NTRU) in Python; Beitrag zu einer wissenschaftlichen Publikation
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     AUSBILDUNG
+% ============================================================
+
+\section{Ausbildung}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexiko}{}{\vspace{1pt}
+Note: 1,3 (Stipendium für akademische Exzellenz; DAAD-KOSPIE-Stipendium). Schwerpunkte: Datenanalyse \& Statistik, Machine Learning \& KI, numerische Optimierung.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025--2026}{Auslandssemester}{Universität Göttingen}{Deutschland}{}{}}
+
+\end{itemize}
+
+% ============================================================
+%     SPRACHEN
+% ============================================================
+
+\section{Sprachen}
+\vspace{1pt}
+\begin{itemize}
+\item Deutsch (C1), Englisch (C1, TOEFL iBT 105/120), Spanisch (Muttersprache).
+\end{itemize}
+
+% ============================================================
+%     PUBLIKATIONEN
+% ============================================================
+
+\section{Publikationen}
+\vspace{1pt}
+\begin{itemize}
+\item Beitrag zu einer wissenschaftlichen Publikation über gitterbasierte Kryptografie (Sicherheitsparameter- und Laufzeitanalyse von LWE und NTRU), gemeinsam mit Prof. A. F. De Abiega L'Eglisse, Tecnológico de Monterrey (Zitation ausstehend, Publikation in Vorbereitung).
+\end{itemize}
+
+% ============================================================
+%     AUSZEICHNUNGEN
+% ============================================================
+
+\section{Auszeichnungen}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Stipendium für akademische Exzellenz} -- Tecnológico de Monterrey.}
+\item{\textbf{DAAD-KOSPIE-Stipendium}.}
+\item{\textbf{Nationale Physik-Olympiade} -- Mexiko (2020).}
+\item{\textbf{Lobende Erwähnung, Physik-Olympiade} (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENZEN
+% ============================================================
+
+\section{Referenzen}
+\vspace{1pt}
+\begin{itemize}
+\item{Auf Anfrage erhältlich.}
+\end{itemize}
+
+\end{document}

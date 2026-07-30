@@ -1,0 +1,182 @@
+%% CV - Ana Lorena Ortiz Loyola
+%% Tailored for: Hyundai Motor Europe - Werkstudent (m/w/d) Talent Acquisition & Projects, Offenbach
+%% NOTE: HR/recruiting role, weaker match than other roles in this batch. Framed honestly around
+%% transferable data-reporting, documentation, and stakeholder-communication skills.
+%%
+%% Compile with: lualatex main_hyundai.tex
+%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage{needspace}
+
+% Force both first and last name AND section headings to render in moderncv
+% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
+% looks inconsistent with the rest of the blue accent scheme.
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Ana Lorena Ortiz Loyola - CV},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{Ana Lorena}{Ortiz Loyola}
+\address{Frankfurt am Main, Germany}{}{}
+\phone[mobile]{+49 176 62145797}
+\email{a01750283@tec.mx}
+\extrainfo{\href{https://linkedin.com/in/lorenasolana}{LinkedIn}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{Data science student (Tecnológico de Monterrey, expected 2027) with practical experience turning data into structured reporting and clear stakeholder communication during a data engineering internship at Deutsche Bundesbank (AnaCredit). Organized and detail-oriented, with strong Excel and documentation skills and fluent German and English.}
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Data Analysis \& Reporting}: Structured reporting from raw data using Python and Excel, automated stakeholder notifications
+
+\item \textbf{Stakeholder Communication}: Direct communication with reporting banks on data quality findings (Deutsche Bundesbank AnaCredit)
+
+\item \textbf{Organizational Skills}: Detail-oriented, documentation-focused working style across all projects
+
+\item \textbf{Programming \& Data}: Python, SQL, Excel
+
+\item \textbf{Languages}: German (C1), English (C1)
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{04/2026--07/2026}{Data Engineer / Intern}{Deutsche Bundesbank (AnaCredit)}{Frankfurt am Main, Germany}{}{\vspace{1pt}
+\begin{itemize}
+    \item Developed automated migration tests and reporting to ensure identical business logic after data migration
+    \item Automated Jira ticket creation and direct email communication to reporting banks on detected data quality issues
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\needspace{8\baselineskip}
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\needspace{5\baselineskip}
+\item{\cventry{05/2026}{Banking Data Pipeline -- Data Cleaning \& Audit Log}{Personal Project (GitHub), built with Claude Code}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built a fully auditable data-cleaning log and structured exception report for simulated bank transactions
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{10/2024--12/2024}{Predictive Modeling -- Healthcare Optimization}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Analyzed 25+ years of national health data and communicated findings through structured visualizations
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{04/2023--06/2023}{Air Quality Analysis Mexico City -- SVM Classification}{Tecnológico de Monterrey}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built SVM models to classify critical ozone levels from citywide data; visualized and communicated findings
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2022--2027}{BSc in Data Science}{Tecnológico de Monterrey}{Mexico}{}{\vspace{1pt}
+Grade: 1.3 (Academic Excellence Scholarship; DAAD KOSPIE Scholarship). Topics: data analysis \& statistics, machine learning \& AI.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025--2026}{Exchange Semester}{Universität Göttingen}{Germany}{}{}}
+
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item German (C1), English (C1, TOEFL iBT 105/120), Spanish (native).
+\end{itemize}
+
+% ============================================================
+%     PUBLICATIONS
+% ============================================================
+
+\section{Publications}
+\vspace{1pt}
+\begin{itemize}
+\item Contributed to a scientific publication on lattice-based cryptography (LWE, NTRU security parameter and runtime analysis), with Prof. A. F. De Abiega L'Eglisse, Tecnológico de Monterrey (citation pending publication).
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Academic Excellence Scholarship} -- Tecnológico de Monterrey.}
+\item{\textbf{DAAD KOSPIE Scholarship}.}
+\item{\textbf{National Physics Olympiad} -- Mexico (2020).}
+\item{\textbf{Honorable Mention, Physics Olympiad} (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}
