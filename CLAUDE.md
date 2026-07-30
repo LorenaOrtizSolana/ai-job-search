@@ -30,6 +30,19 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Developed automated migration tests (row counts, referential integrity, aggregate consistency) using Pandas DataFrames to ensure identical business logic after data migration
   - Implemented automated error detection identifying deviations (duplicate IDs, value-range violations) with automated Jira ticket creation and emails to reporting banks
   - Significantly reduced response time to data quality issues
+  - Worked within an agile Scrum framework (sprint planning, daily stand-ups, sprint reviews)
+  - **Sub-project - Automated Validation Framework for Regulatory Reporting Data:** converted a non-scalable, case-by-case validation script into a parameterized, reusable Python solution. Designed parameterized MySQL queries applicable to any database/attribute/reporting period; shifted computationally intensive operations to the database layer (SQL views, aggregated queries); built a YAML-driven configuration interface for batch validation across multiple databases/attributes/periods in a single call; extended the logic with percentile-based statistical benchmarking over a rolling 12-month window to flag anomalous reporting frequencies and separate false positives from genuine data-quality issues; added exception handling for connection failures, invalid input, and edge cases (e.g. composite primary keys)
+  - **Sub-project - Test Data Generator for the Bundesbank Platform:** built a configuration-driven system producing complete, consistent synthetic test datasets. Generated Cartesian-product attribute combinations per table from a custom template (type-independent); maintained consistent IDs across tables for referential integrity; exported datasets as XML with full schema metadata, referential-integrity information, and plausibility metrics (e.g. expected record counts)
+
+### Personal & Academic Projects
+- **Lattice-Based Cryptography Research** (10/2024-02/2025) - Tecnológico de Monterrey, with Prof. A. F. De Abiega L'Eglisse
+  - Implemented and analyzed lattice-based cryptographic algorithms (LWE, NTRU) in Python; contributed to a scientific publication analyzing security parameters and runtime behavior across lattice dimensions
+- **Predictive Modeling - Healthcare Optimization** (10/2024-12/2024) - Tecnológico de Monterrey
+  - Analyzed 25+ years of Mexican national health data to identify patient risk profiles and resource bottlenecks; built predictive models (Random Forest, Neural Networks) and K-Means clustering for high-risk segmentation; conducted time-series and regional analyses to uncover seasonal patterns
+- **Banking Data Pipeline - Data Cleaning & Audit Log** (05/2026) - Personal project (GitHub), Python/SQL/SQLite/Pandas
+  - End-to-end pipeline for simulated bank transactions (150 accounts) with a normalized SQLite database, foreign-key integrity checks, and parameterized queries throughout; staged data cleaning (duplicates, nulls, mixed date formats, fuzzy-matched categorical typos) with a fully auditable log (table, column, old/new value, action, timestamp) and quarantine tables preserving data lineage; automated balance maintenance via SQL triggers; 5 quality visualizations and a structured exception report — resolved 130+ data-quality issues in a single run
+- **Mexico City Air Quality Analysis - SVM Classification** (04/2023-06/2023) - Tecnológico de Monterrey
+  - Analyzed city-wide NOx/O3 data and applied SVM models (linear & RBF) to classify critical ozone levels with high accuracy; correlation analysis and visualizations identified elevated pollution in southern city districts; findings presented in a final presentation
 
 ### Technical Skills
 - **Primary:** Python, R, SQL, Pandas, NumPy, Scikit-Learn, Keras, TensorFlow
@@ -38,12 +51,20 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Software:** Azure Cognitive Services, AWS, Jira, Git, Excel, SQLite
 
 ### Certifications
+- **R Programming** - LinkedIn Learning - completed 05/2026
+- **Python AI: Keras, Scikit-Learn, PyTorch** - LinkedIn Learning - completed 05/2026
+- **Python: Data Cleaning** - LinkedIn Learning - completed 05/2026
+- **Tableau Essentials** - LinkedIn Learning - completed 05/2026
 - **Data Science in Python** - University of Michigan (Coursera) - completed 04/2026
 - **Document Analysis with Azure Cognitive Services** - Coursera - completed 02/2026
 - **ML Crash Course: Classification & Logistic Regression** - Google Developer Program - completed 02/2026
 - **Automating Team Communication (Google Sheets & Apps Script)** - Coursera - completed 02/2026
+- **TestDaF (Test Deutsch als Fremdsprache)** - completed 11/2025
 - **AWS Security Fundamentals / Cloud Fundamentals** - HSBC - completed 01/2025
+- **Microsoft Excel 2013 Certification** - Santander Open Academy - completed 12/2024
+- **Goethe-Zertifikat B1** - Goethe-Institut Mexiko - completed 10/2024
 - **The Data Scientist's Toolbox / Python Data Structures / R Programming** - Johns Hopkins (Coursera) - completed 07/2020
+- **Programming for Everybody (Getting Started with Python)** - Coursera - completed 05/2020
 
 ### Publications
 - Contributed to a scientific publication on lattice-based cryptography (analysis of security parameters and runtime behavior of LWE/NTRU under varying lattice dimensions), arising from research with Prof. A. F. De Abiega L'Eglisse at Tecnológico de Monterrey. Full citation/DOI not yet available - update once published.
